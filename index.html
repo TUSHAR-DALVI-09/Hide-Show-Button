@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".hide").click(function(){
+                $("img").hide();
+            });
+        });
+ 
+        $(document).ready(function(){
+            $(".show").click(function(){
+                $("img").show();
+            });
+        });
+    </script>
+
+    <style>
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn button{
+    width: 90px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn :hover{
+    background-color: rgb(251, 219, 219);
+    color: red;
+}
+
+    @media screen and (max-width: 780px){
+    .center img{
+    width: 90%;
+    border-radius: 30%;
+    }
+    
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 50px;
+        margin-left: auto;
+    }
+
+    .btn button{
+        width: 70px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn">
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+</div>
+    <div class="center">
+    <img src="image/img-1.jpg" alt="" width="50%">
+</div>
+</div>
+</body>
+</html>
